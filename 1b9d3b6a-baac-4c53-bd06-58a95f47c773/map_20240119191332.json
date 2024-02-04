@@ -1,0 +1,1569 @@
+{
+    "status": 0,
+    "data": {
+        "trip_count": 8,
+        "trips": [
+            {
+                "start_time": 1703274444.0,
+                "start_location": {
+                    "city": "Baton Rouge",
+                    "state": "Louisiana",
+                    "country": "USA"
+                },
+                "end_location": {
+                    "city": "Baton Rouge",
+                    "state": "Louisiana",
+                    "country": "USA"
+                },
+                "end_time": 1703275707.0,
+                "start_latitude": 30.3970883,
+                "start_longitude": -91.1763617,
+                "end_latitude": 30.4170822,
+                "end_longitude": -91.143366,
+                "start_battery": 0.1796875,
+                "end_battery": 0.169921875,
+                "improved_start_latitude": 0.0,
+                "improved_start_longitude": 0.0,
+                "distance": 12572.546875,
+                "brake_distance": 12483.55859375,
+                "valid_usage_time": 915.0,
+                "valid_call_time": 1263.0,
+                "version": 0,
+                "id": "ad238d755b3ab1106dc1a2b9355d9c35",
+                "device": "088cf33c-2ff3-4811-a4b3-e8e36194a84f",
+                "driver": "1b9d3b6a-baac-4c53-bd06-58a95f47c773",
+                "start_tz_offset": "+0700",
+                "end_tz_offset": "+0700",
+                "backend_version_hash": "8d2b6d9a0c039c16b69f2ae2881b5b00",
+                "power_saving": false,
+                "events": [
+                    {
+                        "start_timestamp": 1703274444.0,
+                        "end_timestamp": 1703275707.0,
+                        "start_latitude": 30.397086655,
+                        "start_longitude": -91.17636325,
+                        "end_latitude": 30.4170822,
+                        "end_longitude": -91.143366,
+                        "start_tz_offset": "+0700",
+                        "end_tz_offset": "+0700",
+                        "type": "VALIDPERIOD",
+                        "kind": "CALL"
+                    },
+                    {
+                        "start_timestamp": 1703274454.0,
+                        "end_timestamp": 1703274651.0,
+                        "start_latitude": 30.397172883,
+                        "start_longitude": -91.176486235,
+                        "end_latitude": 30.410049658,
+                        "end_longitude": -91.186405343,
+                        "start_tz_offset": "+0700",
+                        "end_tz_offset": "+0700",
+                        "type": "VALIDPERIOD",
+                        "kind": "USAGE"
+                    },
+                    {
+                        "start_timestamp": 1703274685.0,
+                        "end_timestamp": 1703274713.0,
+                        "start_latitude": 30.410741727,
+                        "start_longitude": -91.18646369,
+                        "end_latitude": 30.412272642,
+                        "end_longitude": -91.186461038,
+                        "start_tz_offset": "+0700",
+                        "end_tz_offset": "+0700",
+                        "type": "VALIDPERIOD",
+                        "kind": "USAGE"
+                    },
+                    {
+                        "start_timestamp": 1703274755.0,
+                        "end_timestamp": 1703274837.0,
+                        "start_latitude": 30.413118081,
+                        "start_longitude": -91.186756584,
+                        "end_latitude": 30.422900257,
+                        "end_longitude": -91.187543957,
+                        "start_tz_offset": "+0700",
+                        "end_tz_offset": "+0700",
+                        "type": "VALIDPERIOD",
+                        "kind": "USAGE"
+                    },
+                    {
+                        "start_timestamp": 1703274539.9990234,
+                        "end_timestamp": 1703274561.9990234,
+                        "start_latitude": 30.401737697,
+                        "start_longitude": -91.176463867,
+                        "end_latitude": 30.403076069,
+                        "end_longitude": -91.180491823,
+                        "start_tz_offset": "+0700",
+                        "end_tz_offset": "+0700",
+                        "type": "SPEEDING",
+                        "speed": 20.1396484375
+                    },
+                    {
+                        "start_timestamp": 1703274833.2641602,
+                        "end_timestamp": 1703274833.2641602,
+                        "start_latitude": 30.422239962,
+                        "start_longitude": -91.187521679,
+                        "end_latitude": 30.422239962,
+                        "end_longitude": -91.187521679,
+                        "start_tz_offset": "+0700",
+                        "end_tz_offset": "+0700",
+                        "type": "DANGEROUSMANEUVER",
+                        "prob": 1.0
+                    },
+                    {
+                        "start_timestamp": 1703274869.0,
+                        "end_timestamp": 1703275022.0,
+                        "start_latitude": 30.424976779,
+                        "start_longitude": -91.187804558,
+                        "end_latitude": 30.440898383,
+                        "end_longitude": -91.18246102,
+                        "start_tz_offset": "+0700",
+                        "end_tz_offset": "+0700",
+                        "type": "VALIDPERIOD",
+                        "kind": "USAGE"
+                    },
+                    {
+                        "start_timestamp": 1703274961.0180664,
+                        "end_timestamp": 1703274961.0180664,
+                        "start_latitude": 30.439553946,
+                        "start_longitude": -91.187328092,
+                        "end_latitude": 30.439553946,
+                        "end_longitude": -91.187328092,
+                        "start_tz_offset": "+0700",
+                        "end_tz_offset": "+0700",
+                        "type": "DANGEROUSMANEUVER",
+                        "prob": 1.0
+                    },
+                    {
+                        "start_timestamp": 1703274994.4731445,
+                        "end_timestamp": 1703274994.4731445,
+                        "start_latitude": 30.439680849,
+                        "start_longitude": -91.182561049,
+                        "end_latitude": 30.439680849,
+                        "end_longitude": -91.182561049,
+                        "start_tz_offset": "+0700",
+                        "end_tz_offset": "+0700",
+                        "type": "DANGEROUSMANEUVER",
+                        "prob": 1.0
+                    },
+                    {
+                        "start_timestamp": 1703275134.0,
+                        "end_timestamp": 1703275154.0,
+                        "start_latitude": 30.443084883,
+                        "start_longitude": -91.182549234,
+                        "end_latitude": 30.443434554,
+                        "end_longitude": -91.182557679,
+                        "start_tz_offset": "+0700",
+                        "end_tz_offset": "+0700",
+                        "type": "VALIDPERIOD",
+                        "kind": "USAGE"
+                    },
+                    {
+                        "start_timestamp": 1703275142.9829102,
+                        "end_timestamp": 1703275142.9829102,
+                        "start_latitude": 30.443331395,
+                        "start_longitude": -91.182564146,
+                        "end_latitude": 30.443331395,
+                        "end_longitude": -91.182564146,
+                        "start_tz_offset": "+0700",
+                        "end_tz_offset": "+0700",
+                        "type": "DANGEROUSMANEUVER",
+                        "prob": 1.0
+                    },
+                    {
+                        "start_timestamp": 1703275158.0,
+                        "end_timestamp": 1703275177.0,
+                        "start_latitude": 30.44349473,
+                        "start_longitude": -91.181556416,
+                        "end_latitude": 30.443499532,
+                        "end_longitude": -91.181366423,
+                        "start_tz_offset": "+0700",
+                        "end_tz_offset": "+0700",
+                        "type": "VALIDPERIOD",
+                        "kind": "USAGE"
+                    },
+                    {
+                        "start_timestamp": 1703275203.0,
+                        "end_timestamp": 1703275305.0,
+                        "start_latitude": 30.443485281,
+                        "start_longitude": -91.179769757,
+                        "end_latitude": 30.434892845,
+                        "end_longitude": -91.177230489,
+                        "start_tz_offset": "+0700",
+                        "end_tz_offset": "+0700",
+                        "type": "VALIDPERIOD",
+                        "kind": "USAGE"
+                    },
+                    {
+                        "start_timestamp": 1703275308.0,
+                        "end_timestamp": 1703275330.0,
+                        "start_latitude": 30.434892845,
+                        "start_longitude": -91.177230489,
+                        "end_latitude": 30.433216742,
+                        "end_longitude": -91.176123046,
+                        "start_tz_offset": "+0700",
+                        "end_tz_offset": "+0700",
+                        "type": "VALIDPERIOD",
+                        "kind": "USAGE"
+                    },
+                    {
+                        "start_timestamp": 1703275334.0,
+                        "end_timestamp": 1703275336.0,
+                        "start_latitude": 30.433216742,
+                        "start_longitude": -91.176123046,
+                        "end_latitude": 30.433216742,
+                        "end_longitude": -91.176123046,
+                        "start_tz_offset": "+0700",
+                        "end_tz_offset": "+0700",
+                        "type": "VALIDPERIOD",
+                        "kind": "USAGE"
+                    },
+                    {
+                        "start_timestamp": 1703275369.0,
+                        "end_timestamp": 1703275371.0,
+                        "start_latitude": 30.433216742,
+                        "start_longitude": -91.176123046,
+                        "end_latitude": 30.433216742,
+                        "end_longitude": -91.176123046,
+                        "start_tz_offset": "+0700",
+                        "end_tz_offset": "+0700",
+                        "type": "VALIDPERIOD",
+                        "kind": "USAGE"
+                    },
+                    {
+                        "start_timestamp": 1703275373.0,
+                        "end_timestamp": 1703275384.0,
+                        "start_latitude": 30.433216742,
+                        "start_longitude": -91.176123046,
+                        "end_latitude": 30.433216742,
+                        "end_longitude": -91.176123046,
+                        "start_tz_offset": "+0700",
+                        "end_tz_offset": "+0700",
+                        "type": "VALIDPERIOD",
+                        "kind": "USAGE"
+                    },
+                    {
+                        "start_timestamp": 1703275391.0,
+                        "end_timestamp": 1703275606.0,
+                        "start_latitude": 30.433024098,
+                        "start_longitude": -91.175995645,
+                        "end_latitude": 30.421934679,
+                        "end_longitude": -91.140117851,
+                        "start_tz_offset": "+0700",
+                        "end_tz_offset": "+0700",
+                        "type": "VALIDPERIOD",
+                        "kind": "USAGE"
+                    },
+                    {
+                        "start_timestamp": 1703275645.0,
+                        "end_timestamp": 1703275707.0,
+                        "start_latitude": 30.420420333,
+                        "start_longitude": -91.140785569,
+                        "end_latitude": 30.4170822,
+                        "end_longitude": -91.143366,
+                        "start_tz_offset": "+0700",
+                        "end_tz_offset": "+0700",
+                        "type": "VALIDPERIOD",
+                        "kind": "USAGE"
+                    },
+                    {
+                        "start_timestamp": 1703274777.9990234,
+                        "end_timestamp": 1703274800.9990234,
+                        "start_latitude": 30.41448868,
+                        "start_longitude": -91.187177265,
+                        "end_latitude": 30.418275544,
+                        "end_longitude": -91.187383428,
+                        "start_tz_offset": "+0700",
+                        "end_tz_offset": "+0700",
+                        "type": "SPEEDING",
+                        "speed": 20.009765625
+                    }
+                ],
+                "transit_mode": {
+                    "public_transit": 0.0,
+                    "airplane": 0.0,
+                    "multi": 0.0,
+                    "simple_outlier": 0.0,
+                    "short": 0.0,
+                    "bike": 0.0,
+                    "not_on_road": 0.0,
+                    "friendly_prediction": "CAR",
+                    "prediction": "mot_ensemble",
+                    "display": "CAR"
+                },
+                "corrections": {
+                    "transit_mode": "UNSET",
+                    "operator_mode": "UNSET",
+                    "exit_door": "UNSET",
+                    "vehicle_association": "UNSET",
+                    "did_passenger_use_drivers_phone": false,
+                    "source": "UNSET",
+                    "timestamp": 0
+                },
+                "exit_door": {
+                    "friendly_prediction": "UNSET",
+                    "display": "UNSET",
+                    "method": "UNKNOWN",
+                    "certainty": 0.0
+                },
+                "processed": 1703876216.0471847,
+                "bruce_version": "2.22.0",
+                "operator_mode": {
+                    "friendly_prediction": "DRIVER",
+                    "display": "DRIVER",
+                    "method": "di_ensemble_final_3_no_survey",
+                    "certainty": 0.7080132961273193,
+                    "driver": {
+                        "friendly_prediction": "DRIVER",
+                        "display": "DRIVER",
+                        "method": "di_ensemble_final_3_no_survey",
+                        "certainty": 0.7080132961273193
+                    },
+                    "group": {
+                        "operator_mode": {
+                            "friendly_prediction": "UNSET",
+                            "display": "UNSET",
+                            "method": "",
+                            "certainty": 0.0
+                        },
+                        "drivers_in_family": [],
+                        "updated": 0.0
+                    }
+                },
+                "vehicle_association": {
+                    "friendly_prediction": "UNSET",
+                    "display": "UNSET",
+                    "method": "",
+                    "certainty": 0.0
+                },
+                "powered_percentage": 0.0,
+                "event_count": 22,
+                "dings": {
+                    "total": 0
+                },
+                "is_valid": true,
+                "scorer_valid_trips": "not_predicted_passenger",
+                "distraction_count": 0,
+                "distraction_time": 0.0,
+                "focused_drive": true,
+                "prodriver_trip_level": {
+                    "friendly_prediction": "UNKNOWN",
+                    "display": "UNKNOWN",
+                    "method": "prodriver_trip_detector",
+                    "certainty": 0.0
+                },
+                "prodriver_driver_level": {
+                    "friendly_prediction": "UNKNOWN",
+                    "display": "UNKNOWN",
+                    "method": "prodriver_detector",
+                    "certainty": 0.0
+                },
+                "company_id": "2212aa38-0ada-40a3-ace8-fd1096302d8d",
+                "rated_distracted_driving": true,
+                "phone_usage_percent": 0.0
+            },
+            {
+                "start_time": 1703280280.0,
+                "start_location": {
+                    "city": "Baton Rouge",
+                    "state": "Louisiana",
+                    "country": "USA"
+                },
+                "end_location": {
+                    "city": "New Orleans",
+                    "state": "Louisiana",
+                    "country": "USA"
+                },
+                "end_time": 1703284965.0,
+                "start_latitude": 30.4172988,
+                "start_longitude": -91.1449939,
+                "end_latitude": 29.971762,
+                "end_longitude": -90.0811039,
+                "start_battery": 0.16015625,
+                "end_battery": 0.1103515625,
+                "improved_start_latitude": 0.0,
+                "improved_start_longitude": 0.0,
+                "distance": 125986.2578125,
+                "brake_distance": 125913.953125,
+                "valid_usage_time": 4312.0,
+                "valid_call_time": 4685.0,
+                "version": 0,
+                "id": "d26d337a31f1c678fe71a8ce479938ba",
+                "device": "088cf33c-2ff3-4811-a4b3-e8e36194a84f",
+                "driver": "1b9d3b6a-baac-4c53-bd06-58a95f47c773",
+                "start_tz_offset": "+0700",
+                "end_tz_offset": "+0700",
+                "backend_version_hash": "8d2b6d9a0c039c16b69f2ae2881b5b00",
+                "power_saving": false,
+                "events": [
+                    {
+                        "start_timestamp": 1703280280.0,
+                        "end_timestamp": 1703284965.0,
+                        "start_latitude": 30.417381035,
+                        "start_longitude": -91.145328439,
+                        "end_latitude": 29.971762,
+                        "end_longitude": -90.0811039,
+                        "start_tz_offset": "+0700",
+                        "end_tz_offset": "+0700",
+                        "type": "VALIDPERIOD",
+                        "kind": "CALL"
+                    },
+                    {
+                        "start_timestamp": 1703280288.0,
+                        "end_timestamp": 1703280338.0,
+                        "start_latitude": 30.417529152,
+                        "start_longitude": -91.145671955,
+                        "end_latitude": 30.418362694,
+                        "end_longitude": -91.147400134,
+                        "start_tz_offset": "+0700",
+                        "end_tz_offset": "+0700",
+                        "type": "VALIDPERIOD",
+                        "kind": "USAGE"
+                    },
+                    {
+                        "start_timestamp": 1703280376.0,
+                        "end_timestamp": 1703280392.0,
+                        "start_latitude": 30.418944,
+                        "start_longitude": -91.148390616,
+                        "end_latitude": 30.419119382,
+                        "end_longitude": -91.148693258,
+                        "start_tz_offset": "+0700",
+                        "end_tz_offset": "+0700",
+                        "type": "VALIDPERIOD",
+                        "kind": "USAGE"
+                    },
+                    {
+                        "start_timestamp": 1703280423.0,
+                        "end_timestamp": 1703280431.0,
+                        "start_latitude": 30.419478493,
+                        "start_longitude": -91.149408573,
+                        "end_latitude": 30.41949509,
+                        "end_longitude": -91.14944425,
+                        "start_tz_offset": "+0700",
+                        "end_tz_offset": "+0700",
+                        "type": "VALIDPERIOD",
+                        "kind": "USAGE"
+                    },
+                    {
+                        "start_timestamp": 1703280440.0,
+                        "end_timestamp": 1703280451.0,
+                        "start_latitude": 30.419805339,
+                        "start_longitude": -91.150118166,
+                        "end_latitude": 30.419805339,
+                        "end_longitude": -91.150118166,
+                        "start_tz_offset": "+0700",
+                        "end_tz_offset": "+0700",
+                        "type": "VALIDPERIOD",
+                        "kind": "USAGE"
+                    },
+                    {
+                        "start_timestamp": 1703280455.0,
+                        "end_timestamp": 1703280461.0,
+                        "start_latitude": 30.419805339,
+                        "start_longitude": -91.150118166,
+                        "end_latitude": 30.419805339,
+                        "end_longitude": -91.150118166,
+                        "start_tz_offset": "+0700",
+                        "end_tz_offset": "+0700",
+                        "type": "VALIDPERIOD",
+                        "kind": "USAGE"
+                    },
+                    {
+                        "start_timestamp": 1703280526.0,
+                        "end_timestamp": 1703280551.0,
+                        "start_latitude": 30.420347671,
+                        "start_longitude": -91.151270974,
+                        "end_latitude": 30.420490361,
+                        "end_longitude": -91.151578288,
+                        "start_tz_offset": "+0700",
+                        "end_tz_offset": "+0700",
+                        "type": "VALIDPERIOD",
+                        "kind": "USAGE"
+                    },
+                    {
+                        "start_timestamp": 1703280639.0,
+                        "end_timestamp": 1703280713.0,
+                        "start_latitude": 30.421037593,
+                        "start_longitude": -91.152582218,
+                        "end_latitude": 30.42363062,
+                        "end_longitude": -91.146285211,
+                        "start_tz_offset": "+0700",
+                        "end_tz_offset": "+0700",
+                        "type": "VALIDPERIOD",
+                        "kind": "USAGE"
+                    },
+                    {
+                        "start_timestamp": 1703280718.0,
+                        "end_timestamp": 1703283818.0,
+                        "start_latitude": 30.42363062,
+                        "start_longitude": -91.146285211,
+                        "end_latitude": 30.0087722,
+                        "end_longitude": -90.250258537,
+                        "start_tz_offset": "+0700",
+                        "end_tz_offset": "+0700",
+                        "type": "VALIDPERIOD",
+                        "kind": "USAGE"
+                    },
+                    {
+                        "start_timestamp": 1703281650.9990234,
+                        "end_timestamp": 1703282033.9990234,
+                        "start_latitude": 30.220778872,
+                        "start_longitude": -90.956114798,
+                        "end_latitude": 30.160059944,
+                        "end_longitude": -90.83554924,
+                        "start_tz_offset": "+0700",
+                        "end_tz_offset": "+0700",
+                        "type": "SPEEDING",
+                        "speed": 36.0400390625
+                    },
+                    {
+                        "start_timestamp": 1703282102.9990234,
+                        "end_timestamp": 1703282151.9990234,
+                        "start_latitude": 30.154443929,
+                        "start_longitude": -90.812809887,
+                        "end_latitude": 30.151648765,
+                        "end_longitude": -90.794891245,
+                        "start_tz_offset": "+0700",
+                        "end_tz_offset": "+0700",
+                        "type": "SPEEDING",
+                        "speed": 35.7802734375
+                    },
+                    {
+                        "start_timestamp": 1703282978.3261719,
+                        "end_timestamp": 1703282978.3261719,
+                        "start_latitude": 30.104266166,
+                        "start_longitude": -90.49416053,
+                        "end_latitude": 30.104266166,
+                        "end_longitude": -90.49416053,
+                        "start_tz_offset": "+0700",
+                        "end_tz_offset": "+0700",
+                        "type": "DANGEROUSMANEUVER",
+                        "prob": 1.0
+                    },
+                    {
+                        "start_timestamp": 1703282301.9990234,
+                        "end_timestamp": 1703282978.9990234,
+                        "start_latitude": 30.139667106,
+                        "start_longitude": -90.746525488,
+                        "end_latitude": 30.104266166,
+                        "end_longitude": -90.49416053,
+                        "start_tz_offset": "+0700",
+                        "end_tz_offset": "+0700",
+                        "type": "SPEEDING",
+                        "speed": 39.921875
+                    },
+                    {
+                        "start_timestamp": 1703283078.9990234,
+                        "end_timestamp": 1703283586.9990234,
+                        "start_latitude": 30.094508637,
+                        "start_longitude": -90.463048433,
+                        "end_latitude": 30.01694639,
+                        "end_longitude": -90.315190828,
+                        "start_tz_offset": "+0700",
+                        "end_tz_offset": "+0700",
+                        "type": "SPEEDING",
+                        "speed": 39.3994140625
+                    },
+                    {
+                        "start_timestamp": 1703283822.0,
+                        "end_timestamp": 1703283840.0,
+                        "start_latitude": 30.0087722,
+                        "start_longitude": -90.250258537,
+                        "end_latitude": 30.009009565,
+                        "end_longitude": -90.247224225,
+                        "start_tz_offset": "+0700",
+                        "end_tz_offset": "+0700",
+                        "type": "VALIDPERIOD",
+                        "kind": "USAGE"
+                    },
+                    {
+                        "start_timestamp": 1703283843.0,
+                        "end_timestamp": 1703283918.0,
+                        "start_latitude": 30.009009565,
+                        "start_longitude": -90.247224225,
+                        "end_latitude": 30.009312074,
+                        "end_longitude": -90.241956987,
+                        "start_tz_offset": "+0700",
+                        "end_tz_offset": "+0700",
+                        "type": "VALIDPERIOD",
+                        "kind": "USAGE"
+                    },
+                    {
+                        "start_timestamp": 1703283936.0,
+                        "end_timestamp": 1703284039.0,
+                        "start_latitude": 30.009296983,
+                        "start_longitude": -90.241399672,
+                        "end_latitude": 30.008665567,
+                        "end_longitude": -90.231655287,
+                        "start_tz_offset": "+0700",
+                        "end_tz_offset": "+0700",
+                        "type": "VALIDPERIOD",
+                        "kind": "USAGE"
+                    },
+                    {
+                        "start_timestamp": 1703284047.0,
+                        "end_timestamp": 1703284062.0,
+                        "start_latitude": 30.008616131,
+                        "start_longitude": -90.230898493,
+                        "end_latitude": 30.008437522,
+                        "end_longitude": -90.228166025,
+                        "start_tz_offset": "+0700",
+                        "end_tz_offset": "+0700",
+                        "type": "VALIDPERIOD",
+                        "kind": "USAGE"
+                    },
+                    {
+                        "start_timestamp": 1703284066.0,
+                        "end_timestamp": 1703284089.0,
+                        "start_latitude": 30.008437522,
+                        "start_longitude": -90.228166025,
+                        "end_latitude": 30.008323368,
+                        "end_longitude": -90.226419622,
+                        "start_tz_offset": "+0700",
+                        "end_tz_offset": "+0700",
+                        "type": "VALIDPERIOD",
+                        "kind": "USAGE"
+                    },
+                    {
+                        "start_timestamp": 1703284104.0,
+                        "end_timestamp": 1703284678.0,
+                        "start_latitude": 30.008323368,
+                        "start_longitude": -90.226419622,
+                        "end_latitude": 29.989043147,
+                        "end_longitude": -90.075106152,
+                        "start_tz_offset": "+0700",
+                        "end_tz_offset": "+0700",
+                        "type": "VALIDPERIOD",
+                        "kind": "USAGE"
+                    },
+                    {
+                        "start_timestamp": 1703283665.9990234,
+                        "end_timestamp": 1703283787.9990234,
+                        "start_latitude": 30.007108353,
+                        "start_longitude": -90.296039836,
+                        "end_latitude": 30.008436042,
+                        "end_longitude": -90.254555728,
+                        "start_tz_offset": "+0700",
+                        "end_tz_offset": "+0700",
+                        "type": "SPEEDING",
+                        "speed": 32.6494140625
+                    },
+                    {
+                        "start_timestamp": 1703284243.9990234,
+                        "end_timestamp": 1703284348.9990234,
+                        "start_latitude": 30.002933417,
+                        "start_longitude": -90.205008971,
+                        "end_latitude": 29.997843045,
+                        "end_longitude": -90.16676692,
+                        "start_tz_offset": "+0700",
+                        "end_tz_offset": "+0700",
+                        "type": "SPEEDING",
+                        "speed": 37.4677734375
+                    },
+                    {
+                        "start_timestamp": 1703284688.0,
+                        "end_timestamp": 1703284834.0,
+                        "start_latitude": 29.988709286,
+                        "start_longitude": -90.074987395,
+                        "end_latitude": 29.974662269,
+                        "end_longitude": -90.079544728,
+                        "start_tz_offset": "+0700",
+                        "end_tz_offset": "+0700",
+                        "type": "VALIDPERIOD",
+                        "kind": "USAGE"
+                    },
+                    {
+                        "start_timestamp": 1703284864.0,
+                        "end_timestamp": 1703284880.0,
+                        "start_latitude": 29.973422882,
+                        "start_longitude": -90.08062585,
+                        "end_latitude": 29.973007648,
+                        "end_longitude": -90.080789793,
+                        "start_tz_offset": "+0700",
+                        "end_tz_offset": "+0700",
+                        "type": "VALIDPERIOD",
+                        "kind": "USAGE"
+                    },
+                    {
+                        "start_timestamp": 1703284903.0,
+                        "end_timestamp": 1703284914.0,
+                        "start_latitude": 29.972156456,
+                        "start_longitude": -90.079554288,
+                        "end_latitude": 29.972156456,
+                        "end_longitude": -90.079554288,
+                        "start_tz_offset": "+0700",
+                        "end_tz_offset": "+0700",
+                        "type": "VALIDPERIOD",
+                        "kind": "USAGE"
+                    },
+                    {
+                        "start_timestamp": 1703284916.0,
+                        "end_timestamp": 1703284944.0,
+                        "start_latitude": 29.972156456,
+                        "start_longitude": -90.079554288,
+                        "end_latitude": 29.971215447,
+                        "end_longitude": -90.080176437,
+                        "start_tz_offset": "+0700",
+                        "end_tz_offset": "+0700",
+                        "type": "VALIDPERIOD",
+                        "kind": "USAGE"
+                    },
+                    {
+                        "start_timestamp": 1703284945.0,
+                        "end_timestamp": 1703284958.0,
+                        "start_latitude": 29.971781188,
+                        "start_longitude": -90.081086438,
+                        "end_latitude": 29.971781188,
+                        "end_longitude": -90.081086438,
+                        "start_tz_offset": "+0700",
+                        "end_tz_offset": "+0700",
+                        "type": "VALIDPERIOD",
+                        "kind": "USAGE"
+                    },
+                    {
+                        "start_timestamp": 1703284440.9990234,
+                        "end_timestamp": 1703284611.9990234,
+                        "start_latitude": 29.996756433,
+                        "start_longitude": -90.140783779,
+                        "end_latitude": 29.992750796,
+                        "end_longitude": -90.081915292,
+                        "start_tz_offset": "+0700",
+                        "end_tz_offset": "+0700",
+                        "type": "SPEEDING",
+                        "speed": 36.8388671875
+                    }
+                ],
+                "transit_mode": {
+                    "public_transit": 0.0,
+                    "airplane": 0.0,
+                    "multi": 0.0,
+                    "simple_outlier": 0.0,
+                    "short": 0.0,
+                    "bike": 0.0,
+                    "not_on_road": 0.0,
+                    "friendly_prediction": "CAR",
+                    "prediction": "mot_ensemble",
+                    "display": "CAR"
+                },
+                "corrections": {
+                    "transit_mode": "UNSET",
+                    "operator_mode": "UNSET",
+                    "exit_door": "UNSET",
+                    "vehicle_association": "UNSET",
+                    "did_passenger_use_drivers_phone": false,
+                    "source": "UNSET",
+                    "timestamp": 0
+                },
+                "exit_door": {
+                    "friendly_prediction": "UNSET",
+                    "display": "UNSET",
+                    "method": "UNKNOWN",
+                    "certainty": 0.0
+                },
+                "processed": 1703876223.1823459,
+                "bruce_version": "2.22.0",
+                "operator_mode": {
+                    "friendly_prediction": "PASSENGER",
+                    "display": "PASSENGER",
+                    "method": "di_ensemble_final_3_no_survey",
+                    "certainty": 0.40968042612075806,
+                    "driver": {
+                        "friendly_prediction": "PASSENGER",
+                        "display": "PASSENGER",
+                        "method": "di_ensemble_final_3_no_survey",
+                        "certainty": 0.40968042612075806
+                    },
+                    "group": {
+                        "operator_mode": {
+                            "friendly_prediction": "UNSET",
+                            "display": "UNSET",
+                            "method": "",
+                            "certainty": 0.0
+                        },
+                        "drivers_in_family": [],
+                        "updated": 0.0
+                    }
+                },
+                "vehicle_association": {
+                    "friendly_prediction": "UNSET",
+                    "display": "UNSET",
+                    "method": "",
+                    "certainty": 0.0
+                },
+                "powered_percentage": 0.0,
+                "event_count": 28,
+                "dings": null,
+                "is_valid": false,
+                "scorer_valid_trips": "not_predicted_passenger",
+                "distraction_count": 0,
+                "distraction_time": 0.0,
+                "focused_drive": true,
+                "prodriver_trip_level": {
+                    "friendly_prediction": "UNKNOWN",
+                    "display": "UNKNOWN",
+                    "method": "prodriver_trip_detector",
+                    "certainty": 0.0
+                },
+                "prodriver_driver_level": {
+                    "friendly_prediction": "UNKNOWN",
+                    "display": "UNKNOWN",
+                    "method": "prodriver_detector",
+                    "certainty": 0.0
+                },
+                "company_id": "2212aa38-0ada-40a3-ace8-fd1096302d8d"
+            },
+            {
+                "start_time": 1703381383.0,
+                "start_location": {
+                    "city": "New Orleans",
+                    "state": "Louisiana",
+                    "country": "USA"
+                },
+                "end_location": {
+                    "city": "New Orleans",
+                    "state": "Louisiana",
+                    "country": "USA"
+                },
+                "end_time": 1703381887.0,
+                "start_latitude": 29.978099,
+                "start_longitude": -90.1060998,
+                "end_latitude": 29.9657414,
+                "end_longitude": -90.0876575,
+                "start_battery": 0.0595703125,
+                "end_battery": 0.0498046875,
+                "improved_start_latitude": 0.0,
+                "improved_start_longitude": 0.0,
+                "distance": 2245.5517578125,
+                "brake_distance": 0.06406450271606445,
+                "valid_usage_time": 0.0,
+                "valid_call_time": 0.0,
+                "version": 0,
+                "id": "e280eefe41e3021042a3bb5ae1e03e28",
+                "device": "088cf33c-2ff3-4811-a4b3-e8e36194a84f",
+                "driver": "1b9d3b6a-baac-4c53-bd06-58a95f47c773",
+                "start_tz_offset": "+0700",
+                "end_tz_offset": "+0700",
+                "backend_version_hash": "8d2b6d9a0c039c16b69f2ae2881b5b00",
+                "power_saving": false,
+                "events": [],
+                "transit_mode": {
+                    "public_transit": 0.0,
+                    "airplane": 0.0,
+                    "multi": 0.0,
+                    "simple_outlier": 0.0,
+                    "short": 0.0,
+                    "bike": 0.0,
+                    "not_on_road": 0.0,
+                    "friendly_prediction": "CAR",
+                    "prediction": "mot_ensemble",
+                    "display": "CAR"
+                },
+                "corrections": {
+                    "transit_mode": "UNSET",
+                    "operator_mode": "UNSET",
+                    "exit_door": "UNSET",
+                    "vehicle_association": "UNSET",
+                    "did_passenger_use_drivers_phone": false,
+                    "source": "UNSET",
+                    "timestamp": 0
+                },
+                "exit_door": {
+                    "friendly_prediction": "UNSET",
+                    "display": "UNSET",
+                    "method": "UNKNOWN",
+                    "certainty": 0.0
+                },
+                "processed": 1703876216.4021847,
+                "bruce_version": "2.22.0",
+                "operator_mode": {
+                    "friendly_prediction": "DRIVER",
+                    "display": "DRIVER",
+                    "method": "di_ensemble_final_3_no_survey",
+                    "certainty": 0.8774413466453552,
+                    "driver": {
+                        "friendly_prediction": "DRIVER",
+                        "display": "DRIVER",
+                        "method": "di_ensemble_final_3_no_survey",
+                        "certainty": 0.8774413466453552
+                    },
+                    "group": {
+                        "operator_mode": {
+                            "friendly_prediction": "UNSET",
+                            "display": "UNSET",
+                            "method": "",
+                            "certainty": 0.0
+                        },
+                        "drivers_in_family": [],
+                        "updated": 0.0
+                    }
+                },
+                "vehicle_association": {
+                    "friendly_prediction": "UNSET",
+                    "display": "UNSET",
+                    "method": "",
+                    "certainty": 0.0
+                },
+                "powered_percentage": 0.0,
+                "event_count": 0,
+                "dings": {
+                    "total": 0
+                },
+                "is_valid": true,
+                "scorer_valid_trips": "not_predicted_passenger",
+                "distraction_count": 0,
+                "distraction_time": 0.0,
+                "focused_drive": true,
+                "prodriver_trip_level": {
+                    "friendly_prediction": "UNKNOWN",
+                    "display": "UNKNOWN",
+                    "method": "prodriver_trip_detector",
+                    "certainty": 0.0
+                },
+                "prodriver_driver_level": {
+                    "friendly_prediction": "UNKNOWN",
+                    "display": "UNKNOWN",
+                    "method": "prodriver_detector",
+                    "certainty": 0.0
+                },
+                "company_id": "2212aa38-0ada-40a3-ace8-fd1096302d8d",
+                "rated_distracted_driving": true,
+                "phone_usage_percent": 0.0
+            },
+            {
+                "start_time": 1703386598.0,
+                "start_location": {
+                    "city": "New Orleans",
+                    "state": "Louisiana",
+                    "country": "USA"
+                },
+                "end_location": {
+                    "city": "Metairie",
+                    "state": "Louisiana",
+                    "country": "USA"
+                },
+                "end_time": 1703388165.0,
+                "start_latitude": 29.9658478,
+                "start_longitude": -90.0872238,
+                "end_latitude": 30.0202164,
+                "end_longitude": -90.1430125,
+                "start_battery": 0.0498046875,
+                "end_battery": 0.0498046875,
+                "improved_start_latitude": 0.0,
+                "improved_start_longitude": 0.0,
+                "distance": 1.2628798484802246,
+                "brake_distance": 1.2628798484802246,
+                "valid_usage_time": 0.0,
+                "valid_call_time": 0.0,
+                "version": 0,
+                "id": "27d9d99ce0c76328ed574d1276393e51",
+                "device": "088cf33c-2ff3-4811-a4b3-e8e36194a84f",
+                "driver": "1b9d3b6a-baac-4c53-bd06-58a95f47c773",
+                "start_tz_offset": "+0700",
+                "end_tz_offset": "+0700",
+                "backend_version_hash": "8d2b6d9a0c039c16b69f2ae2881b5b00",
+                "power_saving": false,
+                "events": [],
+                "transit_mode": {
+                    "public_transit": 0.0,
+                    "airplane": 0.0,
+                    "multi": 0.0,
+                    "simple_outlier": 0.0,
+                    "short": 0.0,
+                    "bike": 0.0,
+                    "not_on_road": 0.0,
+                    "friendly_prediction": "CAR",
+                    "prediction": "mot_ensemble",
+                    "display": "CAR"
+                },
+                "corrections": {
+                    "transit_mode": "UNSET",
+                    "operator_mode": "UNSET",
+                    "exit_door": "UNSET",
+                    "vehicle_association": "UNSET",
+                    "did_passenger_use_drivers_phone": false,
+                    "source": "UNSET",
+                    "timestamp": 0
+                },
+                "exit_door": {
+                    "friendly_prediction": "UNSET",
+                    "display": "UNSET",
+                    "method": "UNKNOWN",
+                    "certainty": 0.0
+                },
+                "processed": 1703876215.5102465,
+                "bruce_version": "2.22.0",
+                "operator_mode": {
+                    "friendly_prediction": "DRIVER",
+                    "display": "DRIVER",
+                    "method": "di_ensemble_final_3_no_survey",
+                    "certainty": 0.8865298628807068,
+                    "driver": {
+                        "friendly_prediction": "DRIVER",
+                        "display": "DRIVER",
+                        "method": "di_ensemble_final_3_no_survey",
+                        "certainty": 0.8865298628807068
+                    },
+                    "group": {
+                        "operator_mode": {
+                            "friendly_prediction": "UNSET",
+                            "display": "UNSET",
+                            "method": "",
+                            "certainty": 0.0
+                        },
+                        "drivers_in_family": [],
+                        "updated": 0.0
+                    }
+                },
+                "vehicle_association": {
+                    "friendly_prediction": "UNSET",
+                    "display": "UNSET",
+                    "method": "",
+                    "certainty": 0.0
+                },
+                "powered_percentage": 0.0,
+                "event_count": 0,
+                "dings": {
+                    "total": 0
+                },
+                "is_valid": true,
+                "scorer_valid_trips": "not_predicted_passenger",
+                "distraction_count": 0,
+                "distraction_time": 0.0,
+                "focused_drive": true,
+                "prodriver_trip_level": {
+                    "friendly_prediction": "UNKNOWN",
+                    "display": "UNKNOWN",
+                    "method": "prodriver_trip_detector",
+                    "certainty": 0.0
+                },
+                "prodriver_driver_level": {
+                    "friendly_prediction": "UNKNOWN",
+                    "display": "UNKNOWN",
+                    "method": "prodriver_detector",
+                    "certainty": 0.0
+                },
+                "company_id": "2212aa38-0ada-40a3-ace8-fd1096302d8d",
+                "rated_distracted_driving": true,
+                "phone_usage_percent": 0.0
+            },
+            {
+                "start_time": 1703391402.0,
+                "start_location": {
+                    "city": "Metairie",
+                    "state": "Louisiana",
+                    "country": "USA"
+                },
+                "end_location": {
+                    "city": "New Orleans",
+                    "state": "Louisiana",
+                    "country": "USA"
+                },
+                "end_time": 1703392483.0,
+                "start_latitude": 30.0195404,
+                "start_longitude": -90.142109,
+                "end_latitude": 30.0208342,
+                "end_longitude": -90.1127763,
+                "start_battery": 0.0498046875,
+                "end_battery": 0.0498046875,
+                "improved_start_latitude": 0.0,
+                "improved_start_longitude": 0.0,
+                "distance": 0.8139309883117676,
+                "brake_distance": 0.8139309883117676,
+                "valid_usage_time": 0.0,
+                "valid_call_time": 0.0,
+                "version": 0,
+                "id": "eaf45e8747402b57e271f174e4ff7462",
+                "device": "088cf33c-2ff3-4811-a4b3-e8e36194a84f",
+                "driver": "1b9d3b6a-baac-4c53-bd06-58a95f47c773",
+                "start_tz_offset": "+0700",
+                "end_tz_offset": "+0700",
+                "backend_version_hash": "8d2b6d9a0c039c16b69f2ae2881b5b00",
+                "power_saving": false,
+                "events": [],
+                "transit_mode": {
+                    "public_transit": 0.0,
+                    "airplane": 0.0,
+                    "multi": 0.0,
+                    "simple_outlier": 0.0,
+                    "short": 0.0,
+                    "bike": 0.0,
+                    "not_on_road": 0.0,
+                    "friendly_prediction": "CAR",
+                    "prediction": "mot_ensemble",
+                    "display": "CAR"
+                },
+                "corrections": {
+                    "transit_mode": "UNSET",
+                    "operator_mode": "UNSET",
+                    "exit_door": "UNSET",
+                    "vehicle_association": "UNSET",
+                    "did_passenger_use_drivers_phone": false,
+                    "source": "UNSET",
+                    "timestamp": 0
+                },
+                "exit_door": {
+                    "friendly_prediction": "UNSET",
+                    "display": "UNSET",
+                    "method": "UNKNOWN",
+                    "certainty": 0.0
+                },
+                "processed": 1703876214.037737,
+                "bruce_version": "2.22.0",
+                "operator_mode": {
+                    "friendly_prediction": "DRIVER",
+                    "display": "DRIVER",
+                    "method": "di_ensemble_final_3_no_survey",
+                    "certainty": 0.9118888974189758,
+                    "driver": {
+                        "friendly_prediction": "DRIVER",
+                        "display": "DRIVER",
+                        "method": "di_ensemble_final_3_no_survey",
+                        "certainty": 0.9118888974189758
+                    },
+                    "group": {
+                        "operator_mode": {
+                            "friendly_prediction": "UNSET",
+                            "display": "UNSET",
+                            "method": "",
+                            "certainty": 0.0
+                        },
+                        "drivers_in_family": [],
+                        "updated": 0.0
+                    }
+                },
+                "vehicle_association": {
+                    "friendly_prediction": "UNSET",
+                    "display": "UNSET",
+                    "method": "",
+                    "certainty": 0.0
+                },
+                "powered_percentage": 0.0,
+                "event_count": 0,
+                "dings": {
+                    "total": 0
+                },
+                "is_valid": true,
+                "scorer_valid_trips": "not_predicted_passenger",
+                "distraction_count": 0,
+                "distraction_time": 0.0,
+                "focused_drive": true,
+                "prodriver_trip_level": {
+                    "friendly_prediction": "UNKNOWN",
+                    "display": "UNKNOWN",
+                    "method": "prodriver_trip_detector",
+                    "certainty": 0.0
+                },
+                "prodriver_driver_level": {
+                    "friendly_prediction": "UNKNOWN",
+                    "display": "UNKNOWN",
+                    "method": "prodriver_detector",
+                    "certainty": 0.0
+                },
+                "company_id": "2212aa38-0ada-40a3-ace8-fd1096302d8d",
+                "rated_distracted_driving": true,
+                "phone_usage_percent": 0.0
+            },
+            {
+                "start_time": 1703397111.0,
+                "start_location": {
+                    "city": "Metairie",
+                    "state": "Louisiana",
+                    "country": "USA"
+                },
+                "end_location": {
+                    "city": "New Orleans",
+                    "state": "Louisiana",
+                    "country": "USA"
+                },
+                "end_time": 1703398070.0,
+                "start_latitude": 29.9891418,
+                "start_longitude": -90.1330741,
+                "end_latitude": 29.9295151,
+                "end_longitude": -90.0676053,
+                "start_battery": 0.0400390625,
+                "end_battery": 0.0400390625,
+                "improved_start_latitude": 0.0,
+                "improved_start_longitude": 0.0,
+                "distance": 13606.041015625,
+                "brake_distance": 14.771860122680664,
+                "valid_usage_time": 0.0,
+                "valid_call_time": 0.0,
+                "version": 0,
+                "id": "02fd0b3717a67b4bb6c301944259d964",
+                "device": "088cf33c-2ff3-4811-a4b3-e8e36194a84f",
+                "driver": "1b9d3b6a-baac-4c53-bd06-58a95f47c773",
+                "start_tz_offset": "+0700",
+                "end_tz_offset": "+0700",
+                "backend_version_hash": "8d2b6d9a0c039c16b69f2ae2881b5b00",
+                "power_saving": false,
+                "events": [
+                    {
+                        "start_timestamp": 1703397200.116211,
+                        "end_timestamp": 1703397244.0332031,
+                        "start_latitude": 29.991092297,
+                        "start_longitude": -90.14079432,
+                        "end_latitude": 29.994966478,
+                        "end_longitude": -90.140670393,
+                        "start_tz_offset": "+0700",
+                        "end_tz_offset": "+0700",
+                        "type": "SPEEDING",
+                        "speed": 13.490234375
+                    }
+                ],
+                "transit_mode": {
+                    "public_transit": 0.0,
+                    "airplane": 0.0,
+                    "multi": 0.0,
+                    "simple_outlier": 0.0,
+                    "short": 0.0,
+                    "bike": 0.0,
+                    "not_on_road": 0.0,
+                    "friendly_prediction": "CAR",
+                    "prediction": "mot_ensemble",
+                    "display": "CAR"
+                },
+                "corrections": {
+                    "transit_mode": "UNSET",
+                    "operator_mode": "UNSET",
+                    "exit_door": "UNSET",
+                    "vehicle_association": "UNSET",
+                    "did_passenger_use_drivers_phone": false,
+                    "source": "UNSET",
+                    "timestamp": 0
+                },
+                "exit_door": {
+                    "friendly_prediction": "UNSET",
+                    "display": "UNSET",
+                    "method": "UNKNOWN",
+                    "certainty": 0.0
+                },
+                "processed": 1703876217.1578722,
+                "bruce_version": "2.22.0",
+                "operator_mode": {
+                    "friendly_prediction": "DRIVER",
+                    "display": "DRIVER",
+                    "method": "di_ensemble_final_3_no_survey",
+                    "certainty": 0.9339845180511475,
+                    "driver": {
+                        "friendly_prediction": "DRIVER",
+                        "display": "DRIVER",
+                        "method": "di_ensemble_final_3_no_survey",
+                        "certainty": 0.9339845180511475
+                    },
+                    "group": {
+                        "operator_mode": {
+                            "friendly_prediction": "UNSET",
+                            "display": "UNSET",
+                            "method": "",
+                            "certainty": 0.0
+                        },
+                        "drivers_in_family": [],
+                        "updated": 0.0
+                    }
+                },
+                "vehicle_association": {
+                    "friendly_prediction": "UNSET",
+                    "display": "UNSET",
+                    "method": "",
+                    "certainty": 0.0
+                },
+                "powered_percentage": 0.0,
+                "event_count": 1,
+                "dings": {
+                    "total": 0
+                },
+                "is_valid": true,
+                "scorer_valid_trips": "not_predicted_passenger",
+                "distraction_count": 0,
+                "distraction_time": 0.0,
+                "focused_drive": true,
+                "prodriver_trip_level": {
+                    "friendly_prediction": "UNKNOWN",
+                    "display": "UNKNOWN",
+                    "method": "prodriver_trip_detector",
+                    "certainty": 0.0
+                },
+                "prodriver_driver_level": {
+                    "friendly_prediction": "UNKNOWN",
+                    "display": "UNKNOWN",
+                    "method": "prodriver_detector",
+                    "certainty": 0.0
+                },
+                "company_id": "2212aa38-0ada-40a3-ace8-fd1096302d8d",
+                "rated_distracted_driving": true,
+                "phone_usage_percent": 0.0
+            },
+            {
+                "start_time": 1703413463.0,
+                "start_location": {
+                    "city": "New Orleans",
+                    "state": "Louisiana",
+                    "country": "USA"
+                },
+                "end_location": {
+                    "city": "New Orleans",
+                    "state": "Louisiana",
+                    "country": "USA"
+                },
+                "end_time": 1703413856.0,
+                "start_latitude": 29.9921701,
+                "start_longitude": -90.113837,
+                "end_latitude": 29.97288,
+                "end_longitude": -90.1005979,
+                "start_battery": 0.0302734375,
+                "end_battery": 0.01953125,
+                "improved_start_latitude": 0.0,
+                "improved_start_longitude": 0.0,
+                "distance": 2897.99658203125,
+                "brake_distance": 0.8018283843994141,
+                "valid_usage_time": 0.0,
+                "valid_call_time": 0.0,
+                "version": 0,
+                "id": "5555b21740b0b2d800818e1af34ceff5",
+                "device": "088cf33c-2ff3-4811-a4b3-e8e36194a84f",
+                "driver": "1b9d3b6a-baac-4c53-bd06-58a95f47c773",
+                "start_tz_offset": "+0700",
+                "end_tz_offset": "+0700",
+                "backend_version_hash": "8d2b6d9a0c039c16b69f2ae2881b5b00",
+                "power_saving": false,
+                "events": [],
+                "transit_mode": {
+                    "public_transit": 0.0,
+                    "airplane": 0.0,
+                    "multi": 0.0,
+                    "simple_outlier": 0.0,
+                    "short": 0.0,
+                    "bike": 0.0,
+                    "not_on_road": 0.0,
+                    "friendly_prediction": "CAR",
+                    "prediction": "mot_ensemble",
+                    "display": "CAR"
+                },
+                "corrections": {
+                    "transit_mode": "UNSET",
+                    "operator_mode": "UNSET",
+                    "exit_door": "UNSET",
+                    "vehicle_association": "UNSET",
+                    "did_passenger_use_drivers_phone": false,
+                    "source": "UNSET",
+                    "timestamp": 0
+                },
+                "exit_door": {
+                    "friendly_prediction": "UNSET",
+                    "display": "UNSET",
+                    "method": "UNKNOWN",
+                    "certainty": 0.0
+                },
+                "processed": 1703876214.8199813,
+                "bruce_version": "2.22.0",
+                "operator_mode": {
+                    "friendly_prediction": "DRIVER",
+                    "display": "DRIVER",
+                    "method": "di_ensemble_final_3_no_survey",
+                    "certainty": 0.9280516505241394,
+                    "driver": {
+                        "friendly_prediction": "DRIVER",
+                        "display": "DRIVER",
+                        "method": "di_ensemble_final_3_no_survey",
+                        "certainty": 0.9280516505241394
+                    },
+                    "group": {
+                        "operator_mode": {
+                            "friendly_prediction": "UNSET",
+                            "display": "UNSET",
+                            "method": "",
+                            "certainty": 0.0
+                        },
+                        "drivers_in_family": [],
+                        "updated": 0.0
+                    }
+                },
+                "vehicle_association": {
+                    "friendly_prediction": "UNSET",
+                    "display": "UNSET",
+                    "method": "",
+                    "certainty": 0.0
+                },
+                "powered_percentage": 0.0,
+                "event_count": 0,
+                "dings": {
+                    "total": 0
+                },
+                "is_valid": true,
+                "scorer_valid_trips": "not_predicted_passenger",
+                "distraction_count": 0,
+                "distraction_time": 0.0,
+                "focused_drive": true,
+                "prodriver_trip_level": {
+                    "friendly_prediction": "UNKNOWN",
+                    "display": "UNKNOWN",
+                    "method": "prodriver_trip_detector",
+                    "certainty": 0.0
+                },
+                "prodriver_driver_level": {
+                    "friendly_prediction": "UNKNOWN",
+                    "display": "UNKNOWN",
+                    "method": "prodriver_detector",
+                    "certainty": 0.0
+                },
+                "company_id": "2212aa38-0ada-40a3-ace8-fd1096302d8d",
+                "rated_distracted_driving": true,
+                "phone_usage_percent": 0.0
+            },
+            {
+                "start_time": 1703868940.0,
+                "start_location": {
+                    "city": "Baton Rouge",
+                    "state": "Louisiana",
+                    "country": "USA"
+                },
+                "end_location": {
+                    "city": "Baton Rouge",
+                    "state": "Louisiana",
+                    "country": "USA"
+                },
+                "end_time": 1703869149.0,
+                "start_latitude": 30.3971559,
+                "start_longitude": -91.1763353,
+                "end_latitude": 30.4064805,
+                "end_longitude": -91.1803525,
+                "start_battery": 0.76953125,
+                "end_battery": 0.76953125,
+                "improved_start_latitude": 0.0,
+                "improved_start_longitude": 0.0,
+                "distance": 1763.5826416015625,
+                "brake_distance": 1720.36474609375,
+                "valid_usage_time": 184.0,
+                "valid_call_time": 209.0,
+                "version": 0,
+                "id": "425264a6d95aee950fad819da0a6c89d",
+                "device": "088cf33c-2ff3-4811-a4b3-e8e36194a84f",
+                "driver": "1b9d3b6a-baac-4c53-bd06-58a95f47c773",
+                "start_tz_offset": "+0700",
+                "end_tz_offset": "+0700",
+                "backend_version_hash": "8d2b6d9a0c039c16b69f2ae2881b5b00",
+                "power_saving": false,
+                "events": [
+                    {
+                        "start_timestamp": 1703868940.0,
+                        "end_timestamp": 1703869149.0,
+                        "start_latitude": 30.397102395,
+                        "start_longitude": -91.176385707,
+                        "end_latitude": 30.4064805,
+                        "end_longitude": -91.1803525,
+                        "start_tz_offset": "+0700",
+                        "end_tz_offset": "+0700",
+                        "type": "VALIDPERIOD",
+                        "kind": "CALL"
+                    },
+                    {
+                        "start_timestamp": 1703868950.0,
+                        "end_timestamp": 1703869009.0,
+                        "start_latitude": 30.397172883,
+                        "start_longitude": -91.176486235,
+                        "end_latitude": 30.399411268,
+                        "end_longitude": -91.173422531,
+                        "start_tz_offset": "+0700",
+                        "end_tz_offset": "+0700",
+                        "type": "VALIDPERIOD",
+                        "kind": "USAGE"
+                    },
+                    {
+                        "start_timestamp": 1703869017.0,
+                        "end_timestamp": 1703869142.0,
+                        "start_latitude": 30.399411268,
+                        "start_longitude": -91.173422531,
+                        "end_latitude": 30.4064805,
+                        "end_longitude": -91.1803525,
+                        "start_tz_offset": "+0700",
+                        "end_tz_offset": "+0700",
+                        "type": "VALIDPERIOD",
+                        "kind": "USAGE"
+                    }
+                ],
+                "transit_mode": {
+                    "public_transit": 0.0,
+                    "airplane": 0.0,
+                    "multi": 0.0,
+                    "simple_outlier": 0.0,
+                    "short": 0.0,
+                    "bike": 0.0,
+                    "not_on_road": 0.0,
+                    "friendly_prediction": "CAR",
+                    "prediction": "mot_ensemble",
+                    "display": "CAR"
+                },
+                "corrections": {
+                    "transit_mode": "UNSET",
+                    "operator_mode": "UNSET",
+                    "exit_door": "UNSET",
+                    "vehicle_association": "UNSET",
+                    "did_passenger_use_drivers_phone": false,
+                    "source": "UNSET",
+                    "timestamp": 0
+                },
+                "exit_door": {
+                    "friendly_prediction": "UNSET",
+                    "display": "UNSET",
+                    "method": "UNKNOWN",
+                    "certainty": 0.0
+                },
+                "processed": 1703876215.644093,
+                "bruce_version": "2.22.0",
+                "operator_mode": {
+                    "friendly_prediction": "DRIVER",
+                    "display": "DRIVER",
+                    "method": "di_ensemble_final_3_no_survey",
+                    "certainty": 0.6573559045791626,
+                    "driver": {
+                        "friendly_prediction": "DRIVER",
+                        "display": "DRIVER",
+                        "method": "di_ensemble_final_3_no_survey",
+                        "certainty": 0.6573559045791626
+                    },
+                    "group": {
+                        "operator_mode": {
+                            "friendly_prediction": "UNSET",
+                            "display": "UNSET",
+                            "method": "",
+                            "certainty": 0.0
+                        },
+                        "drivers_in_family": [],
+                        "updated": 0.0
+                    }
+                },
+                "vehicle_association": {
+                    "friendly_prediction": "UNSET",
+                    "display": "UNSET",
+                    "method": "",
+                    "certainty": 0.0
+                },
+                "powered_percentage": 0.0,
+                "event_count": 4,
+                "dings": {
+                    "total": 0
+                },
+                "is_valid": true,
+                "scorer_valid_trips": "not_predicted_passenger",
+                "distraction_count": 0,
+                "distraction_time": 0.0,
+                "focused_drive": true,
+                "prodriver_trip_level": {
+                    "friendly_prediction": "UNKNOWN",
+                    "display": "UNKNOWN",
+                    "method": "prodriver_trip_detector",
+                    "certainty": 0.0
+                },
+                "prodriver_driver_level": {
+                    "friendly_prediction": "UNKNOWN",
+                    "display": "UNKNOWN",
+                    "method": "prodriver_detector",
+                    "certainty": 0.0
+                },
+                "company_id": "2212aa38-0ada-40a3-ace8-fd1096302d8d",
+                "rated_distracted_driving": true,
+                "phone_usage_percent": 0.0
+            }
+        ]
+    },
+    "message": ""
+}

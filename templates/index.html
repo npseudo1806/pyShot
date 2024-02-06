@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <title>Roomba Map Viewer</title>
+    <title>PyShot- DIA Forensic Tool</title>
 </head>
 
 <style>
@@ -49,7 +49,7 @@
         /* Centered text */
         text-decoration: none;
         display: inline-block;
-        font-size: 14px;
+        font-size: 18px;
         /* Slightly smaller font size */
         margin: 4px 2px;
         cursor: pointer;
@@ -109,11 +109,13 @@
         padding: 20px;
         border-radius: 5px;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        font-size: 18px!important;
     }
 
     table {
         width: 100%;
         border-collapse: collapse;
+        font-size: 18px!important;
     }
 
     td {
@@ -144,7 +146,7 @@
         /* Centered text */
         text-decoration: none;
         display: inline-block;
-        font-size: 14px;
+        font-size: 18px;
         /* Slightly smaller font size */
         margin: 4px 2px;
         cursor: pointer;
@@ -334,10 +336,10 @@ height: 400px; /* Adjust as needed */
     background-color: aliceblue;
 }
 
-.timeline::after {
+/* .timeline::after {
     content: '';
     position: absolute;
-    width: 2px; /* Thinner central line */
+    width: 2px; 
     background-color: #f2f2f2;
     top: 0;
     bottom: 0;
@@ -346,7 +348,7 @@ height: 400px; /* Adjust as needed */
 }
 
 .timeline-event {
-    padding: 5px 20px; /* Reduced padding for less vertical space */
+    padding: 5px 20px; 
     position: relative;
     background-color: inherit;
     width: 40%;
@@ -355,10 +357,10 @@ height: 400px; /* Adjust as needed */
 .timeline-event::after {
     content: '';
     position: absolute;
-    width: 15px; /* Smaller circles */
+    width: 15px; 
     height: 15px;
     background-color: white;
-    border: 2px solid #f2f2f2; /* Thinner border for the circles */
+    border: 2px solid #f2f2f2; 
     top: 50%;
     transform: translateY(-50%);
     border-radius: 50%;
@@ -370,7 +372,7 @@ height: 400px; /* Adjust as needed */
 }
 
 .timeline-event.left::after {
-    right: -7.5px; /* Half of the circle's width */
+    right: -7.5px; 
 }
 
 .timeline-event.right {
@@ -378,8 +380,8 @@ height: 400px; /* Adjust as needed */
 }
 
 .timeline-event.right::after {
-    left: -7.5px; /* Half of the circle's width */
-}
+    left: -7.5px; 
+} */
 
 .timeline-content {
     padding: 10px; /* Reduced padding for more compact content boxes */
@@ -389,7 +391,6 @@ height: 400px; /* Adjust as needed */
     font-size: 0.8em; /* Smaller text size */
 }
 
-/* Smaller headers within timeline content */
 .timeline-content h4 {
     font-size: 0.9em;
     margin: 0 0 5px; /* Reduced margin for tighter grouping */
@@ -460,8 +461,10 @@ height: 400px; /* Adjust as needed */
             <th>End Location</th>
             <th>Start Time</th>
             <th>End Time</th>
-            <th>Distance (m)</th>
+            <th>Distance (Miles)</th>
             <th>Phone Usage (%)</th>
+            <th>Driver Prediction</th>
+            <th> Driver Prediction (%)</th>
             </tr>
             </thead>
             <tbody>
@@ -473,161 +476,218 @@ height: 400px; /* Adjust as needed */
 
     </div>
 
+
+
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfShmyZNMPEc8TBw1Ym6uKSbjNClKyPS8&callback=initMap" async defer></script>
     <script>
     let map;
     let directionsService;
     let directionsRenderer;
     let markers = []; 
 
-    function initMap(data) {
-    // Define the map and set default options
-    map = new google.maps.Map(document.getElementById("map-container"), {
-    zoom: 12,
-    center: { lat: data.start_latitude, lng: data.start_longitude },// Centered on the geographical center of the contiguous USA
-    mapTypeId: google.maps.MapTypeId.SATELLITE,
-    zoomControl: true,
-    mapTypeControl: true,
-    streetViewControl: true
-   });
-
-
-    directionsService = new google.maps.DirectionsService();
-    directionsRenderer = new google.maps.DirectionsRenderer();
-    directionsRenderer.setMap(map);
-
-    map.addListener("click", (e) => {
-        addMarker(e.latLng);
+function initMap() {
+    map = new google.maps.Map(document.getElementById('map-container'), {
+        center: { lat: 0, lng: 0 }, // Default center of the map
+        zoom: 12, // Default zoom level
+        mapTypeId: google.maps.MapTypeId.ROADMAP
     });
-    
-    }    
+    directionsRenderer = new google.maps.DirectionsRenderer({ map: map });
 
-    function addMarker(location) {
+    // Dynamically create the legend
+    const legend = document.createElement('div');
+    legend.id = 'Events';
+    // legend.innerHTML = `
+    //     <h3>Events</h3>
+    //     <div><img src="http://maps.google.com/mapfiles/ms/icons/green-dot.png"> Start Point</div>
+    //     <div><img src="http://maps.gstatic.com/mapfiles/ms2/micons/purple.png"> End Point</div>
+    //     <div><img src="http://maps.google.com/mapfiles/ms/icons/red-dot.png"> Brake</div>
+    //     <div><img src="http://maps.google.com/mapfiles/ms/icons/yellow-dot.png"> Acceleration</div>
+    //     <div><img src="http://maps.google.com/mapfiles/ms/icons/orange-dot.png"> Distraction</div>
+    //     <div><img src="http://maps.google.com/mapfiles/ms/icons/blue-dot.png"> ValidPeriod</div>
+    // `;
+
+    legend.innerHTML = `
+    <h3 style="font-size: 20px; text-align:center;">Events</h3>
+    <div style="font-size: 20px;"><img src="http://maps.google.com/mapfiles/ms/icons/green-dot.png" style="width: 24px; height: 24px;"> Start Point</div>
+    <div style="font-size: 20px;"><img src="http://maps.gstatic.com/mapfiles/ms2/micons/purple.png" style="width: 24px; height: 24px;"> End Point</div>
+    <div style="font-size: 20px;"><img src="http://maps.google.com/mapfiles/ms/icons/red-dot.png" style="width: 24px; height: 24px;"> Brake</div>
+    <div style="font-size: 20px;"><img src="https://maps.gstatic.com/mapfiles/ms2/micons/pink-dot.png" style="width: 24px; height: 24px;"> Speeding</div>
+    <div style="font-size: 20px;"><img src="http://maps.google.com/mapfiles/ms/icons/yellow-dot.png" style="width: 24px; height: 24px;"> Acceleration</div>
+    <div style="font-size: 20px;"><img src="http://maps.google.com/mapfiles/ms/icons/orange-dot.png" style="width: 24px; height: 24px;"> Distraction</div>
+    <div style="font-size: 20px;"><img src="http://maps.google.com/mapfiles/ms/icons/blue-dot.png" style="width: 24px; height: 24px;"> Valid Period</div>
+`;
+
+
+
+    legend.style.backgroundColor = 'white';
+    legend.style.padding = '10px';
+    legend.style.margin = '10px';
+    legend.style.border = '1px solid white';
+
+    // Add the legend to the map
+    map.controls[google.maps.ControlPosition.RIGHT_TOP].push(legend);
+
+    
+}
+
+function toUnixTimestamp(dateTimeString) {
+    // Create a Date object from the dateTimeString
+    const date = new Date(dateTimeString);
+
+    // Convert the time to milliseconds and then to seconds
+    const unixTimestamp = Math.floor(date.getTime() / 1000);
+
+    return unixTimestamp;
+}
+
+// // Example usage:
+// const dateTimeString = "2024-01-04 08:03:58";
+// const unixTimestamp = toUnixTimestamp(dateTimeString);
+
+// console.log(unixTimestamp); // Output will be the Unix timestamp representation of the given date-time string
+
+     
+
+    function addMarker(location, type, timestamp = null) {
+
+    console.log(`Adding marker: ${type}, Location: ${location}, Time:${timestamp}`);
+    let iconUrl;
+    let contentString = '';
+
+  
+
+    switch (type) {
+        case 'START':
+            iconUrl = 'http://maps.google.com/mapfiles/ms/icons/green-dot.png';
+            break;
+        case 'END':
+            iconUrl = 'http://maps.gstatic.com/mapfiles/ms2/micons/purple.png'; // Corrected to red for end marker
+            break;
+        case 'BRAKE':
+            iconUrl = 'http://maps.google.com/mapfiles/ms/icons/red-dot.png';
+            break;
+        case 'ACCELERATION':
+            iconUrl = 'http://maps.google.com/mapfiles/ms/icons/yellow-dot.png';
+            break;
+        case 'DISTRACTION':
+            iconUrl = 'http://maps.google.com/mapfiles/ms/icons/orange-dot.png';
+            break;
+        case 'SPEEDING':
+            iconUrl = 'https://maps.gstatic.com/mapfiles/ms2/micons/pink-dot.png';
+            break;
+        default:
+            iconUrl = 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png';
+    }
+
+    // contentString = `Type: ${type}<br>Timestamp: ${new Date(timestamp * 1000).toLocaleString()}`;
+
+//     contentString = `
+//     <strong>Type:</strong> <span style="font-size: large; "> ${type}<br>
+//     <strong>Timestamp:</strong> <span style="font-size: large; ">${new Date(timestamp * 1000).toLocaleString()}</span>
+// `;
+
+// contentString = `
+// <span style="font-size: large;">Event:</span> <span style="font-size: large;">${type}</span><br>
+// <span style="font-size: large;">Time:</span> <span style="font-size: large;">${new Date(timestamp * 1000).toLocaleString()}</span>
+// `;
+
+contentString = `
+    <span style="font-size: 20px; font-weight: bold;">Event:</span> <span style="font-size: 20px; font-weight: bold;">${type}</span><br>
+    <span style="font-size: 20px; font-weight: bold;">Time:</span> <span style="font-size: 20px; font-weight: bold;">${new Date(timestamp * 1000).toLocaleString()}</span>
+`;
+
+
+
+
+    console.log("contentString",contentString);
+
+
     const marker = new google.maps.Marker({
-        position: location,
-        map: map,
+    position: location,
+    map: map,
+    icon: iconUrl
     });
-    markers.push(marker);
 
-    // Calculate route if there are 2 or more markers
-    if (markers.length >= 2) {
-        calculateAndDisplayRoute();
-    }
-}
-
-   function calculateAndDisplayRoute() {
-    if (markers.length < 2) {
-        return; // Ensure there are at least two markers
-    }
-    const waypoints = markers.slice(1, markers.length - 1).map(marker => ({
-        location: marker.getPosition(),
-        stopover: true,
-    }));
-
-    const origin = markers[0].getPosition();
-    const destination = markers[markers.length - 1].getPosition();
-
-    directionsService.route({
-        origin: origin,
-        destination: destination,
-        waypoints: waypoints,
-        travelMode: google.maps.TravelMode.DRIVING,
-    }, (response, status) => {
-        if (status === 'OK') {
-            directionsRenderer.setDirections(response);
-        } else {
-            window.alert('Directions request failed due to ' + status);
-        }
+    if (contentString) {
+    const infowindow = new google.maps.InfoWindow({
+    content: contentString
     });
-}
-   
-   
-    function getMarkerColor(kind, type) {
-    // Define your color mappings
-    const kindColors = {
-    'CALL': 'blue',
-    'USAGE': 'green',
-    'PHONE_USAGE': 'red',
-    'DISTRACTION': 'orange',
-    'BRAKE': 'purple'
-    // Add more as needed
-    };
 
-    const typeColors = {
-    'VALIDPERIOD': 'lime',
-    'DANGEROUSMANEUVER': 'magenta',
-    'SPEEDING': 'yellow'
-    // Add more as needed
-    };
-
-    // Priority given to specific types
-    if (type === 'DANGEROUSMANEUVER' || type === 'SPEEDING') {
-    return typeColors[type];
+    marker.addListener('click', function() {
+    infowindow.open(map, marker);
+    });
+    }
     }
 
-    // Default to kind color if no specific type color
-    return kindColors[kind] || 'gray';
-
-    // Prefer type color if it's defined, otherwise fall back to kind color
-    //return typeColors[type] || kindColors[kind] || 'gray'; // Default to gray
-    }
-    
-
-    function addMarkersToMap(data) {
+    function addMarkersAndRoute(tripData) {
+    console.log("Trip Data:", tripData); // Debug: Log trip data
     const bounds = new google.maps.LatLngBounds();
-    const allPoints = [
-        { ...data, type: 'Start', timestamp: data.start_time },
-        { ...data, type: 'End', timestamp: data.end_time },
-        ...data.events.map(event => ({ ...event, type: 'Event' }))
-    ];
+    const startLatLng = new google.maps.LatLng(tripData.start_latitude, tripData.start_longitude);
+    const endLatLng = new google.maps.LatLng(tripData.end_latitude, tripData.end_longitude);
 
-    allPoints.forEach((point, index) => {
-        const position = new google.maps.LatLng(point.start_latitude, point.start_longitude);
-        let title, color;
-        if (point.type === 'Event') {
-            title = `${point.kind} - ${point.type}`;
-            color = getMarkerColor(point.kind, point.type);
-        } else if (point.type === 'Start') {
-            title = 'Start';
-            color = 'green';
-        } else if (point.type === 'End') {
-            title = 'End';
-            color = 'red';
-        } else {
-            title = 'Point';
-            color = 'gray';
-        }
+    const tripData_start_time = toUnixTimestamp(tripData.start_time);
+    const tripData_end_time = toUnixTimestamp(tripData.end_time);
 
-        const marker = new google.maps.Marker({
-            position: position,
-            map: map,
-            title: title,
-            label: { text: `${index + 1}`, color: 'white' },
-            icon: {
-                path: google.maps.SymbolPath.CIRCLE,
-                scale: 7,
-                fillColor: color,
-                fillOpacity: 0.8,
-                strokeWeight: 0
-            }
-        });
+    
+    console.log("tripData.start_time",tripData_start_time);
+    console.log("tripData.end_time",tripData_end_time);
 
-        // Optionally add an info window for each marker
-        const infoWindow = new google.maps.InfoWindow({
-            content: `<div>Type: ${point.type}</div><div>Kind: ${point.kind || ''}</div>`
-        });
+    addMarker(startLatLng, 'START', tripData_start_time);
+    addMarker(endLatLng, 'END', tripData_end_time);
 
-        marker.addListener('click', () => {
-            infoWindow.open(map, marker);
-        });
+    bounds.extend(startLatLng);
+    bounds.extend(endLatLng);
 
-        bounds.extend(position);
+    // Sort the events based on start_timestamp in ascending order
+    const sortedEvents = tripData.events.sort((a, b) => a.start_timestamp - b.start_timestamp);
+
+    // Define an arrow symbol
+    const arrowSymbol = {
+        path: google.maps.SymbolPath.FORWARD_CLOSED_ARROW,
+        scale: 2,
+        strokeColor: '#808080'
+    };
+
+    // Initialize the map to fit the bounds of the markers
+    map.fitBounds(bounds);
+
+    const path = [startLatLng]; // Initialize path with the start location
+
+    sortedEvents.forEach(event => {
+        const waypointLatLng = new google.maps.LatLng(event.start_latitude, event.start_longitude);
+        bounds.extend(waypointLatLng); // Extend bounds to include this point
+        path.push(waypointLatLng); // Add waypoint to path
+
+        // Determine the event type and pass it along with the timestamp
+        addMarker(waypointLatLng, event.type, event.start_timestamp);
+
+        console.log("event.start_timestamp",event.start_timestamp);
     });
 
-    map.fitBounds(bounds);
+    path.push(endLatLng); // Add the end location to the path
+
+    // Create a polyline to connect the markers
+    const line = new google.maps.Polyline({
+        path: path,
+        geodesic: true,
+        strokeColor: '#FF0000',
+        strokeOpacity: 0.8,
+        strokeWeight: 2,
+        icons: [{
+            icon: arrowSymbol,
+            offset: '100%',
+            repeat: '100px' // Adjust as needed
+        }],
+        map: map
+    });
+
+    // No need to use Directions service as we are manually connecting markers
 }
 
-    // Function to populate the timeline
+
+
+   
     async function populateTimeline(data) {
     let timelineHtml = '<div class="timeline">';
     timelineHtml += `<div class="timeline-event left">
@@ -676,7 +736,6 @@ height: 400px; /* Adjust as needed */
     return `${lat}, ${lng}`; // Fallback to coordinates if geocoding fails
     }
     }
-
 
 
     document.getElementById('login-form').addEventListener('submit', async (event) => {
@@ -786,11 +845,6 @@ height: 400px; /* Adjust as needed */
                                 }
 
 
-
-
-
-
-
                         }
                 // document.getElementById('main').appendChild(tokenDiv);
             } else {
@@ -803,19 +857,6 @@ height: 400px; /* Adjust as needed */
 });
 
 
-    // document.getElementById('get-map').addEventListener('click', async () => {
-    //     const response  = await fetch('/tripList', {
-    //         method: 'POST',
-    //         headers: {
-    //             'Content-Type': 'application/json',
-    //         },
-    //     });
-
-
-
-    //  });
-   
-   
     document.getElementById('get-map').addEventListener('click', async () => {
     const response = await fetch('/tripList', {
         method: 'GET',
@@ -835,14 +876,21 @@ height: 400px; /* Adjust as needed */
         tableBody.innerHTML = '';
         // Populate table with trip data
         trips.forEach(trip => {
+            const phoneUsage = ('phone_usage_percent' in trip && trip.phone_usage_percent !== undefined) ? trip.phone_usage_percent : "On Passenger seat not driver";
+            const distanceInMiles = (trip.distance / 1609.34).toFixed(2);
+            const phone_usage_percent = (trip.phone_usage_percent);
             const row = `
                 <tr>
                     <td>${trip.start_location.city} , ${trip.start_location.state},${trip.start_location.country} </td>
                     <td>${trip.end_location.city}, ${trip.end_location.state},${trip.end_location.country}</td>
                     <td>${trip.start_time}</td>
                     <td>${trip.end_time}</td>
-                    <td>${trip.distance}</td>
-                    <td>${trip.phone_usage_percent}</td>
+                    <td>${distanceInMiles}</td>
+                    <td>${phone_usage_percent}</td>
+                    <td>${trip.operator_mode.display}</td>
+                    <td>${trip.operator_mode.certainty}</td>
+                    
+                    
                 </tr>`;
             tableBody.innerHTML += row;
         });
@@ -871,21 +919,26 @@ height: 400px; /* Adjust as needed */
     const data = await response.json();
     console.log("tripdetails==>", data);
 
-    initMap(data);
-    addMarkersToMap(data);
     const timelineHtml = await populateTimeline(data);
     document.getElementById('timeline-container').innerHTML = timelineHtml;
     document.getElementById('details-container').style.display = 'block';
 
 
 
-    // Populate map
-    const startLatLng = new google.maps.LatLng(data.start_latitude, data.start_longitude);
-    const endLatLng = new google.maps.LatLng(data.end_latitude, data.end_longitude);
-    map.setCenter(startLatLng);
+     initMap();
+     addMarkersAndRoute(data);
+
+
+
+    // // Populate map
+    // const startLatLng = new google.maps.LatLng(data.start_latitude, data.start_longitude);
+    // const endLatLng = new google.maps.LatLng(data.end_latitude, data.end_longitude);
+    // map.setCenter(startLatLng);
     } catch (error) {
     console.error('Fetch error:', error);
     }
+
+    
     });
     });
 });
@@ -914,6 +967,6 @@ height: 400px; /* Adjust as needed */
     });
 
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfShmyZNMPEc8TBw1Ym6uKSbjNClKyPS8&callback=initMap" async defer></script>
+   
 </body>
 </html>
